@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr 20fr;
+    grid-template-areas: 
+    "sidebar nav nav nav nav nav"
+    "sidebar container container  container container container";
+    grid-template-rows: 1fr 20fr;
+}
+aside{
+    background: rgb(153, 43, 120);
+    grid-area: sidebar;
+}
+.header-title{
+    background: rgb(66, 19, 51);
+   padding: 15.3px;
+}
+.header-title h3{
+    margin: 0;
+    color: white;
+}
+nav{
+    background: rgb(110, 29, 85);
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+li{
+    padding: 13px;
+}
+section{
+    background: rgb(68, 22, 57);
+    grid-area: container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    width: 30%;
+    background: rgb(216, 211, 211);
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-group{
+    margin-top: 10px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background: rgb(94, 24, 94);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.form-title{
+    font-size: 25px;
+    color: rgb(126, 17, 80);
+    text-transform: uppercase;
+
+}
+.profile img{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
